@@ -1,0 +1,144 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, aqua, aqua);
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: black;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+#header-img {
+  height: 50px;
+}
+
+#nav-bar {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: aqua;
+}
+
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.pricing-option {
+  border: 2px solid black;
+  padding: 20px;
+  margin: 20px;
+  background: white;
+  border-radius: 10px;
+  width: 250px;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.pricing-option:hover {
+  transform: scale(1.05);
+  background: aqua;
+  color: white;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background: black;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: white;
+  color:black;
+}
+
+#video {
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+#form-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+#email {
+  padding: 10px;
+  width: 300px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+#submit {
+  padding: 10px 20px;
+  border: none;
+  background: black;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+#submit:hover {
+  background: white;
+  color:black
+}
+
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+}
+
+@media (max-width: 600px) {
+  #nav-bar {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+  }
+
+  .pricing-option {
+      width: 100%;
+      margin: 10px 0;
+  }
+
+  #email {
+      width: 100%;
+  }
+}
